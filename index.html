@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project1</title>
+    <title>project2</title>
     <link rel="stylesheet" href="./CSS.css/all.min.css">
     <link rel="stylesheet" href="CSS.css/style.css">
 </head>
@@ -14,24 +14,32 @@
     <!-- first Page ***************************************************************************************************** -->
     <header class="firstPage">
         <div class=logo>
-            <a href="#">
+            <a href="./index.html">
                 <img src="./images/logo-alt.webp" alt="logo" draggable="false">
             </a>
 
         </div>
         <nav>
             <ul class="homeNav">
-                <li><a class="homeActive" href="#">home</a></li>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">our services</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a class="nav-a homeActive" href="./index.html"><i class="fas fa-home"></i> home</a></li>
+                <li><a class="nav-a" href="#"><i class="fas fa-address-card"></i> about us</a></li>
+                <li><a class="nav-a" href="#"><i class="fas fa-concierge-bell"></i> our services</a></li>
+                <li><a class="nav-a" href="#"><i class="fas fa-id-card-alt"></i> contact</a></li>
                 <li class="dropDown">
-                    <a class="prices" href="#">prices</a>
-                    <ul>
-                        <li class="menu1"> <a href="#">item</a></li>
+                    <a class="nav-a prices" href="#"><i class="fas fa-money-bill-wave"></i> prices <i
+                            class="fas fa-angle-double-down downIcon"></i></a>
+                    <ul class="dropDownUl">
+                        <li class="menu1"> <a class="item-a" href="#">item</a></li>
+                        <li class="menu1"> <a class="item-a" href="#">item</a></li>
+                        <li class="menu1"> <a class="item-a" href="#">item</a></li>
+                        <li class="menu1"> <a class="item-a" href="#">item</a></li>
                     </ul>
                 </li>
             </ul>
+
+            <button class="callNowBtn">
+                call now <i class="fas fa-phone"></i> <i class="fas fa-fire-alt"></i>
+            </button>
         </nav>
     </header>
     <main class="home">
@@ -42,19 +50,17 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam numquam explicabo soluta. Sunt
                     doloribus
                     eveniet exercitationem, expedita, eaque excepturi quos quibusdam architecto, obcaecati aliquid
-                    minima
-                    amet
-                    itaque. Ullam, amet optio.
+                    minima amet itaque. Ullam, amet optio.
                 </p>
-                <button class="gtStarted btn">get started</button>
-                <button class="learnMore btn">learn more</button>
+                <a href="#seconPageTitle" class="gtStarted btn">get started</a>
+                <a href="#" class="learnMore btn">learn more</a>
             </section>
         </div>
     </main>
 
     <!-- second Page ******************************************************************************************************* -->
     <header class="secondPageHeader header">
-        <h2 class="secondTitle h2title">welcome to website</h2>
+        <h2 class="secondTitle h2title" id="seconPageTitle">welcome to website</h2>
     </header>
     <article class="secondPageContent">
         <section class="secondPageSection seconPageTransition">
@@ -191,6 +197,45 @@
         </figure>
     </article>
 
+
+    <!-- fourth page ------------------------------------------------------------------------------------------------ -->
+
+    <header class="fifthPageHeader header">
+        <h2 class="fifthTitle h2title">
+            why choose us
+        </h2>
+    </header>
+    <section class="fifthPageContent">
+        <aside class="fifthPageText aside">
+            <p class="fifthPageP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eaque magnam
+                veritatis, ea dolorum illo officiis. Voluptatem ad eveniet tenetur?</p>
+            <ul class="listParent">
+
+                <li class="fifthPageList"> <i class=" icon fas fa-check fa-x listIcon"></i> Lorem ipsum dolor
+                    sit amet consectetur adipisicing.</li>
+                <li class="fifthPageList"> <i class=" icon fas fa-check fa-x listIcon"></i> Lorem ipsum dolor
+                    sit amet consectetur adipisicing.</li>
+                <li class="fifthPageList"> <i class=" icon fas fa-check fa-x listIcon"></i> Lorem ipsum dolor
+                    sit amet consectetur adipisicing.</li>
+                <li class="fifthPageList"> <i class=" icon fas fa-check fa-x listIcon"></i> Lorem ipsum dolor
+                    sit amet consectetur adipisicing.</li>
+            </ul>
+        </aside>
+        <aside class="fifthPageImg aside">
+            <div class="coverImg">
+                <img class="sectionImg" src="./images/about/about1.webp" alt="happy clinte">
+                <i class="fas fa-angle-double-left fa-2x leftBtn moveBtn"></i>
+                <i class="fas fa-angle-double-right fa-2x rightBtn moveBtn"></i>
+            </div>
+            <ul class="bolletsParent">
+                <li class="bollet"></li>
+                <li class="activeBollet bollet"></li>
+                <li class="bollet"></li>
+            </ul>
+        </aside>
+
+    </section>
+    <script src="./Js/home.js"></script>
 </body>
 
 </html>
