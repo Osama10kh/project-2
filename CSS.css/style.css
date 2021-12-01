@@ -211,7 +211,7 @@ header nav ul li a.homeActive::after {
 /* home page  */
 .home {
   height: 100vh;
-  background-image: url(../jonatan-pie-h8nxGssjQXs-unsplash.jpg);
+  background-image: url(../img/dark\ office.jpg);
   background-size: cover;
   position: relative;
 }
@@ -425,7 +425,7 @@ header nav ul li a.homeActive::after {
   padding: 3%;
 }
 
-/* fifth img ---------------------------------------------------------------------------------- */
+/* fourth section ---------------------------------------------------------------------------------- */
 
 .fifthPageContent {
   width: 80%;
@@ -508,4 +508,34 @@ header nav ul li a.homeActive::after {
   margin: 5px;
   display: inline-block;
   background-color: var(--layer-color);
+}
+
+/* ------------------------------------------------------fifth section  */
+
+.section-5 {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+  background: #113cfc url(../img/background2.webp) fixed;
+  background-size: cover;
+}
+
+.section-5 div {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 300px;
+}
+
+.section-5 ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-s5 {
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.icon-s5 > *:not(.fa-2x) {
+  margin: 10px;
 }
