@@ -4,7 +4,7 @@
   --primery-color: #fff;
   --third-color: #6195ff;
   --secondery-color: #000000;
-  --layer-color: rgba(0, 0, 0, 0.5);
+  --layer-color: rgba(0, 0, 0, 0.6);
   --transition: 700ms;
 }
 
@@ -71,8 +71,10 @@ h6 {
 .dropDown:hover .dropDownUl,
 .secondPageSection,
 .thirdPageImg,
-.imgIcon {
-  border: 2px solid var(--third-color);
+.imgIcon,
+.pricingTable {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 header nav ul li a::after,
@@ -81,7 +83,7 @@ header nav ul li a.homeActive::after,
 .imgIcon,
 .fifthPageP::first-letter,
 .activeBollet {
-  background-color: var(--third-color) !important;
+  background-color: var(--third-color);
 }
 
 header nav ul li a::after,
@@ -467,6 +469,11 @@ header nav ul li a.homeActive::after {
   -o-border-radius: 10px;
 }
 
+.img2,
+.img3 {
+  display: none;
+}
+
 .sectionImg:hover {
   opacity: 0.5;
 }
@@ -538,4 +545,85 @@ header nav ul li a.homeActive::after {
 
 .icon-s5 > *:not(.fa-2x) {
   margin: 10px;
+}
+
+/* sixth-section----------------------------------------------------- */
+
+.sixth-section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pricingTable {
+  width: 25%;
+  height: 450px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.pricingTable:hover {
+  background-color: var(--layer-color);
+}
+
+.pricingTable h3 {
+  color: #000000;
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+.price-circle {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border: 2px solid #113cfc;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.price-circle h5 {
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 25%;
+}
+
+.price-circle h5 span {
+  font-size: 2rem;
+}
+
+.pricingTable ul {
+  text-align: center;
+}
+
+.pricingTable ul li {
+  margin-top: 10px;
+}
+
+.pricingTable button {
+  width: 60%;
+  height: 40px;
+  margin: 25px 20%;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  background-color: #6195ff;
+  box-shadow: #6195ff 0px 1px 2px 0px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.pricingTable button:hover {
+  background-color: #113cfc;
+  color: #fff;
 }
