@@ -1,0 +1,74 @@
+.h2title {
+  color: var(--secondery-color);
+  margin: 5% auto;
+}
+
+.h2title::after {
+  content: "";
+  height: 5px;
+  width: 5%;
+  margin: 5px auto 0;
+  display: block;
+}
+
+.secondPageContent {
+  display: flex;
+  margin: 0 calc(30% / 4);
+}
+
+.secondPageSection {
+  width: 30%;
+  height: fit-content;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.seconPageTransition {
+  position: relative;
+}
+
+.seconPageTransition::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  /*anotherway:;
+    deletwidth&heightright: 0;
+    bottom: 0;
+    */
+  background-color: var(--layer-color);
+  z-index: -1;
+}
+
+.seconPageTransition:hover:after {
+  width: 100%;
+}
+
+.secondPageSection:hover .secondPageH3,
+.secondPageSection:hover .secondPageParag,
+.secondPageSection:hover .secondPageAncor {
+  color: var(--primery-color);
+}
+
+.secondPageH3 {
+  color: var(--secondery-color);
+  padding-top: 10px;
+}
+.secondPageParag {
+  color: var(--secondery-color);
+  margin: 15px 10px;
+  line-height: 1.6;
+}
+
+.secondPageAncor {
+  text-decoration: none;
+  color: var(--third-color);
+  font-weight: bold;
+}
+
+.icon {
+  color: var(--third-color);
+  margin: 10px 0;
+}

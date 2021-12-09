@@ -1,0 +1,87 @@
+.fifthPageContent {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+.aside {
+  position: relative;
+}
+
+.fifthPageText {
+  opacity: 0.8;
+}
+
+.fifthPageP {
+  width: 68%;
+  margin: 0 0 30px;
+  line-height: 1.6;
+}
+
+.fifthPageP::first-letter {
+  color: var(--primery-color);
+  padding: 2px;
+  font-size: larger;
+  margin-right: 2px;
+}
+
+.listIcon {
+  padding: 2px;
+}
+
+.sectionImg {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.img2,
+.img3 {
+  display: none;
+}
+
+.sectionImg:hover {
+  opacity: 0.5;
+}
+
+.coverImg:hover::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\fa90";
+  font-weight: bolder;
+  left: 50%;
+}
+
+.moveBtn,
+.coverImg::before {
+  position: absolute;
+  top: 50%;
+  color: var(--third-color);
+}
+
+.rightBtn,
+.leftBtn {
+  cursor: pointer;
+}
+
+.leftBtn {
+  left: 0;
+}
+
+.rightBtn {
+  right: 0;
+}
+
+.bolletsParent {
+  text-align: center;
+}
+
+.bollet {
+  width: 11px;
+  height: 11px;
+  margin: 5px;
+  display: inline-block;
+  background-color: var(--layer-color);
+}

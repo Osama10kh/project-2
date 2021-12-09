@@ -1,0 +1,79 @@
+.sixth-section {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.pricingTable {
+  width: 25%;
+  height: 450px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.pricingTable:hover {
+  background-color: var(--layer-color);
+}
+
+.pricingTable h3 {
+  color: #000000;
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+.price-circle {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  border: 2px solid #113cfc;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.price-circle h5 {
+  font-size: 1rem;
+  color: #000000;
+  margin-top: 25%;
+}
+
+.price-circle h5 span {
+  font-size: 2rem;
+}
+
+.pricingTable ul {
+  text-align: center;
+}
+
+.pricingTable ul li {
+  margin-top: 10px;
+}
+
+.pricingTable button {
+  width: 60%;
+  height: 40px;
+  margin: 25px 20%;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #113cfc;
+  box-shadow: #113cfc 0px 1px 3px 0px, #113cfc 0px 0px 0px 1px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.pricingTable button:hover {
+  background-color: #6195ff;
+  color: #fff;
+}

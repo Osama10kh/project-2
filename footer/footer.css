@@ -1,0 +1,58 @@
+footer {
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+  background-color: #000a35;
+  position: relative;
+}
+
+.footer-logo {
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+footer .footer-icon-cont {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  justify-content: center;
+  position: relative;
+  top: 35%;
+}
+
+.footer-icon-cont i {
+  background-color: #6195ff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-icon-cont i:hover {
+  background-color: gold;
+  cursor: pointer;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+  top: 50%;
+}
+
+.heart-icon {
+  width: 35px;
+  position: relative;
+  top: 7px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}

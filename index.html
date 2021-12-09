@@ -6,8 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project2</title>
-    <link rel="stylesheet" href="./CSS.css/all.min.css">
-    <link rel="stylesheet" href="CSS.css/style.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="./home/style.css">
+    <link rel="stylesheet" href="./brief intro/brief.css">
+    <link rel="stylesheet" href="./featured work/featured work.css">
+    <link rel="stylesheet" href="./why choose use/whyChooseUs.css">
+    <link rel="stylesheet" href="./award/award.css">
+    <link rel="stylesheet" href="./pricing/pricing.css">
+    <link rel="stylesheet" href="./our team/ourTeam.css">
+    <link rel="stylesheet" href="./FeedBack/feedback.css">
+    <link rel="stylesheet" href="./footer/footer.css">
 </head>
 
 <body>
@@ -29,10 +37,9 @@
                     <a class="nav-a prices" href="#"><i class="fas fa-money-bill-wave"></i> prices <i
                             class="fas fa-angle-double-down downIcon"></i></a>
                     <ul class="dropDownUl">
-                        <li class="menu1"> <a class="item-a" href="#">item</a></li>
-                        <li class="menu1"> <a class="item-a" href="#">item</a></li>
-                        <li class="menu1"> <a class="item-a" href="#">item</a></li>
-                        <li class="menu1"> <a class="item-a" href="#">item</a></li>
+                        <li class="menu1"> <a class="item-a" href="#">plan1</a></li>
+                        <li class="menu1"> <a class="item-a" href="#">plan2</a></li>
+                        <li class="menu1"> <a class="item-a" href="#">plan3</a></li>
                     </ul>
                 </li>
             </ul>
@@ -372,16 +379,74 @@
         </div>
     </section>
 
-    <!--------------------- eighth-section  -->
+    <!--------------------- eighth-section (feedback)  -->
 
-    <!-- <section class="eighth-section">
-            <header class="sevenththPageHeader header">
-                <h2 class="sevenththTitle h2title">
-                    feedback
-                </h2>
-            </header>
+    <section class="eighth-section">
+        <header class="sevenththPageHeader header">
+            <h2 class="sevenththTitle h2title">
+                feedback
+            </h2>
+        </header>
 
-        </section> -->
+        <button class="add-feedback-btn" onclick="display()">add your feedback</button>
+
+        <section class="comments-feild">
+            <div class="comments">
+                <img src="./img/team/team1.webp" alt="user">
+                <h5>jhon y.</h5>
+                <p>the best choise</p>
+                <div class="star-widget">
+                    <label for="rate-5" class="fas fa-star"></label>
+                    <label for="rate-4" class="fas fa-star" checked></label>
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <label for="rate-2" class="fas fa-star"></label>
+                    <label for="rate-1" class="fas fa-star"></label>
+                </div>
+            </div>
+        </section>
+
+        <div class=" feedback-cont">
+            <div class="x-btn" onclick="xBtn()">X</div>
+
+            <fieldset>
+                <div class="form">
+                    <form id="form">
+                        <h2>feedback</h2>
+                        <input type="text" id="name" placeholder="name">
+                        <i id="usericon" class="fas fa-user"></i>
+
+                        <label class="labelcheck" for="anonymous" title="check it to hide your name">anonymous</label>
+                        <input class="namecheck" type="checkbox" name="" id="anonymous">
+                        <br>
+                        <br>
+                        <textarea name="feedback" id="feedback" cols="20" rows="10" placeholder="comment"
+                            title="you can resize textarea" required></textarea>
+                </div>
+
+                <div class="container">
+                    <div class="text">Thanks for rating us!</div>
+                    <div class="star-widget">
+                        <input type="radio" name="rate" id="rate-5">
+                        <label for="rate-5" class="fas fa-star"></label>
+                        <input type="radio" name="rate" id="rate-4">
+                        <label for="rate-4" class="fas fa-star"></label>
+                        <input type="radio" name="rate" id="rate-3">
+                        <label for="rate-3" class="fas fa-star"></label>
+                        <input type="radio" name="rate" id="rate-2">
+                        <label for="rate-2" class="fas fa-star"></label>
+                        <input type="radio" name="rate" id="rate-1">
+                        <label for="rate-1" class="fas fa-star"></label>
+                    </div>
+                </div>
+                <div>
+                    <input id="submet" type="submit" value="submet">
+                </div>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+
+    <!-- footer --------------------------------------- -->
 
     <footer>
         <img class="footer-logo" src="./img/logo-alt.webp" alt="footer-logo">
@@ -393,12 +458,13 @@
             <i class="fab fa-youtube fa-2x"></i>
         </div>
         <p>copyright &copy; 2021 all rights reserved</p>
-        <p> designed with <img class="heart-icon" src="./icons8-heart (1).gif" alt="heart"> </p>
+        <p> designed with <img class="heart-icon" src="./img/icons8-heart (1).gif" alt="heart"> </p>
 
     </footer>
 
 
-    <script src="./Js/home.js"></script>
+    <script src="./why choose use/whyChooseUs.js"></script>
+    <script src="./FeedBack/feedback.js"></script>
 </body>
 
 </html>
