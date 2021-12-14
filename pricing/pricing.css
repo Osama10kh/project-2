@@ -76,4 +76,5 @@
 .pricingTable button:hover {
   background-color: #6195ff;
   color: #fff;
+  box-shadow: none;
 }

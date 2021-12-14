@@ -37,7 +37,7 @@
   display: none;
 }
 
-.employee-img:hover .emp-inf-img {
+.employee:hover .employee p {
   display: block;
 }
 

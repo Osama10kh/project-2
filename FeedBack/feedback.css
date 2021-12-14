@@ -2,15 +2,15 @@
 .comments-feild {
   width: 80%;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .comments {
   width: 25%;
-  min-height: 130px;
-  background-color: rosybrown;
+  min-height: 150px;
+  box-shadow: var(--box-shadow);
+  padding: 10px;
 }
 
 .comments img {
@@ -21,11 +21,13 @@
   position: relative;
   top: -30px;
   font-size: 1rem;
+  color: var(--third-color);
 }
 
-.star-widget {
+.star-widget-comment {
   position: relative;
-  bottom: -25px;
+  bottom: -30px;
+  right: 0;
 }
 /* feedback conainer  */
 
@@ -65,6 +67,7 @@
   border: none;
   width: 200px;
   padding: 20px;
+  margin-top: 100px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
