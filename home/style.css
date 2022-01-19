@@ -126,7 +126,7 @@ header .logo img {
 }
 
 .callNowBtn {
-  width: 200px;
+  width: 12%;
   top: 20px;
   right: 20px;
   position: fixed;
@@ -144,18 +144,39 @@ header .logo img {
   -o-border-radius: 5px;
 }
 
-.callNowBtn:hover {
+.callNowBtn:hover,
+.mini-callBtn:hover {
   background-color: #113cfc;
   color: #fff;
   cursor: pointer;
 }
 
-.fa-fire-alt:before {
-  content: "\f7e4";
-  color: red;
-  position: relative;
+.mini-callBtn {
+  display: none;
+  width: 20px;
+  height: 20px;
   top: 5px;
-  right: -15px;
+  right: 50%;
+  position: fixed;
+  padding: 25px;
+  font-size: 15pt;
+  animation: vibrate 1s 0.5s infinite alternate;
+  -webkit-animation: vibrate 1s 0.5s infinite alternate;
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #fff;
+  background: #113cfc;
+}
+
+.fa-phone:before {
+  position: absolute;
+  top: 17px;
+  right: 10px;
 }
 
 /* nav bar  */
@@ -246,6 +267,7 @@ header nav ul li a.homeActive::after {
 .homeParagraph {
   margin: 50px auto;
   line-height: 1.6;
+  text-align: left;
 }
 
 .gtStarted {
@@ -272,4 +294,45 @@ header nav ul li a.homeActive::after {
 
 .btn:hover {
   opacity: 0.5;
+}
+
+/* media query */
+
+@media (max-width: 1199px) {
+  header nav ul {
+    display: none;
+  }
+  .callNowBtn {
+    display: none;
+  }
+  .mini-callBtn {
+    display: block;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 913px) {
+  .gtStarted,
+  .learnMore {
+    padding: 10px 35px;
+    font-size: 11pt;
+  }
+}
+
+/* extra small screen*/
+@media (max-width: 767px) {
+  .homeParagraph {
+    width: 100vh;
+  }
+}
+
+/* small screen */
+@media (min-width: 768px) {
+}
+
+/* medium screen */
+@media (min-width: 992px) {
+}
+
+/* large screen */
+@media (min-width: 1200px) {
 }
